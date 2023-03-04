@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY: "registry.digitalocean.com/testing-docker-deployment"
+  REGISTRY: "registry.digitalocean.com/testing-my-docker-deployment"
   IMAGE_NAME: "flask-docker-deploy-web"
 
 jobs:

@@ -48,6 +48,10 @@ jobs:
           script: |
             # login docker
             sudo docker login -u $DOCKER_USER -p $DOCKER_PASSWORD registry.digitalocean.com
+            
+            docker stop $(echo $IMAGE_NAME)
+
+            docker rm $(echo $IMAGE_NAME)
 
             # Run a new container from a new image
             docker run -d \
